@@ -1,0 +1,1 @@
+web: gunicorn PortalElAlto.wsgi --log-file -
