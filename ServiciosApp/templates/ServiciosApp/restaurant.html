@@ -1,0 +1,26 @@
+{% extends "PortalElAltoApp/baserestaurant.html" %}
+{% load static %}
+
+{% block content %}
+
+{% for rest in ServiciosApp %}
+<section id="one" class="wrapper style2 spotlights">
+    <section>
+        <a href="{{rest.imagen.url}}" class="image">
+            <img src="{{rest.imagen.url}}" alt="" data-position="center center">
+        </a>
+        <div class="content">
+            <div class="inner">
+                <h2>{{rest.nombre}}</h2>
+                <p>{{rest.contenido}}</p>
+                <p><a href="{{rest.ubicacion}}"><i class="fas fa-map-marker-alt"></i></a>{{rest.direccion}}</p>
+                <p></p>
+                <ul class="actions">
+                    <li><a href="{{rest.web}}" class="button">Ver más</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+{% endfor %}
+{% endblock%}

@@ -1,0 +1,13 @@
+{% extends "PortalElAltoApp/basenoticia.html" %}
+{% load static %}
+
+{% block content %}
+
+{% for not in ServiciosApp %}
+<li><a href="{{not.web}}" active target="_blank">
+        <img src="{{not.imagen.url}}" alt="" style="width: 35px; height: 25px;">
+        {{not.nombre}}
+    </a>
+</li>
+{% endfor %}
+{% endblock%}

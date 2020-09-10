@@ -1,0 +1,227 @@
+body {
+    position: relative;
+}
+
+/*----------barra de navegacion------------------*/
+
+nav {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-name .navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-name img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-buscar {
+    background: transparent;
+}
+
+.form-buscar {
+    border-radius: 10px;
+}
+
+.btn {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.nav-link .fa {
+    color: white;
+}
+
+.fas {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    color: black;
+}
+
+/*------------------------------------fin de navegacion..--------------------------*/
+
+.contenido_educativo{
+    margin-top: -70px;
+    width: 100%;
+
+}
+
+.contenido_educativo .evento_educacion {
+    width: 100%;
+    height: 400px;
+}
+
+.contenido_educativo .evento_educacion img {
+    width: 100%;
+    height: 400px;
+}
+
+.contenido_educativo .detalle_evento_educacion {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.contenido_educativo .detalle_evento_educacion h1 {
+    width: 100%;
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
+    background: rgb(35, 35, 255);
+    opacity: .3;
+}
+
+.titulo_2{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 115, 0);
+
+}
+
+/*----------------------------------------*/
+.contenido_educacion{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenido_tarjeta_educacion {
+    margin: 20px;
+}
+
+.contenido_tarjeta_educacion a {
+    display: inline-block;
+}
+
+.contenido_tarjeta_educacion:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.45);
+}
+
+
+figure {
+    width: 300px;
+    height: 350px;
+    margin: 0;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal_educacion, figure .trasera_educacion {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+figure .frontal_educacion {
+    display: block
+    /*backface-visibility: hidden;*/
+}
+
+figure .trasera_educacion {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: white;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+    background: rgba(212, 172, 119, 0.75);
+    background: -moz-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212, 172, 119, 0.75)), color-stop(63%, rgba(187, 127, 67, 0.76)), color-stop(100%, rgba(173, 100, 37, 1)));
+    background: -webkit-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: -o-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: linear-gradient(to bottom, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ac77', endColorstr='#ad6425', GradientType=0);
+}
+
+.contenido_tarjeta_educacion:nth-child(1) figure .trasera_educacion {
+    background: rgba(212, 172, 119, 0.75);
+    background: -moz-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212, 172, 119, 0.75)), color-stop(63%, rgba(187, 127, 67, 0.76)), color-stop(100%, rgba(173, 100, 37, 1)));
+    background: -webkit-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: -o-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    background: linear-gradient(to bottom, rgba(212, 172, 119, 0.75) 0%, rgba(187, 127, 67, 0.76) 63%, rgba(173, 100, 37, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ac77', endColorstr='#ad6425', GradientType=0);
+}
+
+.contenido_tarjeta_educacion:nth-child(2) figure .trasera_educacion {
+    background: rgba(211, 198, 188, 0.75);
+    background: -moz-linear-gradient(top, rgba(211, 198, 188, 0.75) 0%, rgba(211, 198, 188, 0.76) 0%, rgba(187, 127, 67, 0.91) 63%, rgba(72, 36, 20, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(211, 198, 188, 0.75)), color-stop(0%, rgba(211, 198, 188, 0.76)), color-stop(63%, rgba(187, 127, 67, 0.91)), color-stop(100%, rgba(72, 36, 20, 1)));
+    background: -webkit-linear-gradient(top, rgba(211, 198, 188, 0.75) 0%, rgba(211, 198, 188, 0.76) 0%, rgba(187, 127, 67, 0.91) 63%, rgba(72, 36, 20, 1) 100%);
+    background: -o-linear-gradient(top, rgba(211, 198, 188, 0.75) 0%, rgba(211, 198, 188, 0.76) 0%, rgba(187, 127, 67, 0.91) 63%, rgba(72, 36, 20, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(211, 198, 188, 0.75) 0%, rgba(211, 198, 188, 0.76) 0%, rgba(187, 127, 67, 0.91) 63%, rgba(72, 36, 20, 1) 100%);
+    background: linear-gradient(to bottom, rgba(211, 198, 188, 0.75) 0%, rgba(211, 198, 188, 0.76) 0%, rgba(187, 127, 67, 0.91) 63%, rgba(72, 36, 20, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3c6bc', endColorstr='#482414', GradientType=0);
+}
+
+.contenido_tarjeta_educacion:nth-child(3) figure .trasera_educacion {
+    background: rgba(150, 107, 48, 0.76);
+    background: -moz-linear-gradient(top, rgba(150, 107, 48, 0.76) 0%, rgba(164, 115, 55, 0.75) 24%, rgba(187, 127, 67, 0.88) 63%, rgba(109, 41, 11, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(150, 107, 48, 0.76)), color-stop(24%, rgba(164, 115, 55, 0.75)), color-stop(63%, rgba(187, 127, 67, 0.88)), color-stop(100%, rgba(109, 41, 11, 1)));
+    background: -webkit-linear-gradient(top, rgba(150, 107, 48, 0.76) 0%, rgba(164, 115, 55, 0.75) 24%, rgba(187, 127, 67, 0.88) 63%, rgba(109, 41, 11, 1) 100%);
+    background: -o-linear-gradient(top, rgba(150, 107, 48, 0.76) 0%, rgba(164, 115, 55, 0.75) 24%, rgba(187, 127, 67, 0.88) 63%, rgba(109, 41, 11, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(150, 107, 48, 0.76) 0%, rgba(164, 115, 55, 0.75) 24%, rgba(187, 127, 67, 0.88) 63%, rgba(109, 41, 11, 1) 100%);
+    background: linear-gradient(to bottom, rgba(150, 107, 48, 0.76) 0%, rgba(164, 115, 55, 0.75) 24%, rgba(187, 127, 67, 0.88) 63%, rgba(109, 41, 11, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#966b30', endColorstr='#6d290b', GradientType=0);
+}
+
+figure .trasera_educacion .titulo_educacion {
+    font-size: 24px;
+}
+
+.trasera_educacion hr {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+figure .trasera_educacion p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+    figure .trasera_educacion {
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .contenido_tarjeta_educacion:hover figure {
+        transform: perspective(600px) rotateY(0deg);
+    }
+}

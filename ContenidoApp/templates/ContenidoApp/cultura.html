@@ -1,0 +1,27 @@
+{% extends "PortalElAltoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="header-body" style="width: 100%; padding-top: 10px;">
+    <a href="/turismo" style="margin-left: 30px;">
+        <button type="button" class="btn btn-dark"><i class="fa fa-angle-left"></i> Atrás</button></a>
+    <h1 class="title">Cultura</h1>
+</div>
+{% for cult in ContenidoApp %}
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="{{cult.imagen.url}}">
+            <img src="{{cult.imagen.url}}" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc" style="height: 300px;">
+            <div>
+                <h4 class="span_title" style="color:black;">{{cult.titulo}}</h4>
+                <p style="text-align: justify;">{{cult.contenido}}</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

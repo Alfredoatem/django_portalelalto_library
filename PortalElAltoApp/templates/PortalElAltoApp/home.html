@@ -1,0 +1,258 @@
+{% extends "PortalElAltoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-----------------------Barra de Contención----------------------------------->
+<section class="container-principal">
+
+    <div class="container-portada"><br>
+        <!--==================== Barra de Busqueda ==================================-->
+        <div class="container">
+            <div class="row_b">
+                <div class="col-md-12 search">
+                    <form action="" method="get">
+                        <div class="custom-search-input">
+                            <!--
+                             <div class="input-group col-md-12">
+                                <input type="text" class="form-control" placeholder="Buscar..." name="buscar">
+                                <span class="input-group-list" style="padding: 4px;">
+                                    <button type="submit" class="boton_b btn btn-light">
+                                        <i class="fas fa-search busq">Buscar</i>
+                                    </button>
+                                </span>
+                            </div>   
+                            -->
+                            <!--===============================-->
+                            <!--================<div class="input-group col-md-12">
+                                <input type="text" class="form-control" placeholder="Buscar..." name="buscar">
+                                <div class="input-group-append">
+                                  <button class="btn btn-success" type="submit">Ir</button>  
+                                 </div>
+                              </div>================-->
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--==================== Barra de Busqueda ==================================-->
+        <div class="btn-groups">
+            <a href="{% url 'TurismoP' %}" class="btn-link" style="text-decoration: none;">
+                <button class="button button1">La Ciudad más Joven</button>
+            </a><br><br>
+            <a href="http://www.elalto.gob.bo/himno-a-el-alto/" class="btn-link" style="text-decoration: none;">
+                <button class="button button2">Alcaldia Municipal</button>
+            </a><br><br>
+            <a href="{% url 'Servicios' %}" class="btn-link" style="text-decoration: none;">
+                <button class="button button3">Información y Servicios</button>
+            </a><br><br>
+            <a href="http://localhost:3000/" class="btn-link" style="text-decoration: none;">
+                <button class="button button4">En linea</button>
+            </a>
+        </div>
+        <div class="container-details">
+            <!--<h1>
+                    El Alto con Vuelo Propio
+            </h1>-->
+            <img src="{% static 'PortalElAltoApp/image/logo_oficial3.png' %}" alt="">
+        </div>
+        <div class="cajap"></div>
+        <section class="one-third"><br><br><br><br><br>
+            <img src="{% static 'PortalElAltoApp/image/escudo_elalto.png' %}" alt="">
+        </section>
+
+    </div>
+
+</section><br>
+<!--------------------------SLIDER DE PROYECTOS------------------------------>
+<section class="slideshowg">
+    <div class="slideshow">
+        <ul class="slider slider2">
+            <li class="slider-link">
+                <img src="{% static 'PortalElAltoApp/image/2020/0.jpg' %}" alt="Slider 1">
+                <section class="caption">
+                    <h1>Aniv. 35 de la Ciudad de El Alto</h1>
+                    <p>La Alcaldeza Soledad Chapeton da inico a la ofrenda por el 35 Aniversario de la ciudad de El
+                        Alto</p>
+                </section>
+            </li>
+            <li class="slider-link">
+                <img src="{% static 'PortalElAltoApp/image/2020/3.jpg' %}" alt="Slider 1">
+                <section class="caption">
+                    <h1>Aniv. 35 de la Ciudad de El Alto</h1>
+                    <p>Ofrenda a la Pachamama en el Aniversario 35 de la Ciudad de El Alto</p>
+                </section>
+            </li>
+            <li class="slider-link">
+                <img src="{% static 'PortalElAltoApp/image/2020/4.jpg' %}" alt="Slider 1">
+                <section class="caption">
+                    <h1>Aniv. 35 de la Ciudad de El Alto</h1>
+                    <p>Desfile cívico de la ciudad de El Alto, la ciudad mas joven en su 35 Aniversario</p>
+                </section>
+            </li>
+            <li class="slider-link">
+                <img src="{% static 'PortalElAltoApp/image/2020/5.jpg' %}" alt="Slider 1">
+                <section class="caption">
+                    <h1>Aniv. 35 de la Ciudad de El Alto</h1>
+                    <p>Desfile cívico de la ciudad de El Alto, la ciudad mas joven en su 35 Aniversario</p>
+                </section>
+            </li>
+            <li class="slider-link">
+                <img src="{% static 'PortalElAltoApp/image/2020/2.jpg' %}" alt="Slider 1">
+                <section class="caption">
+                    <h1>Aniv. 35 de la Ciudad de El Alto</h1>
+                    <p>Desfile cívico de la ciudad de El Alto, la ciudad mas joven en su 35 Aniversario</p>
+                </section>
+            </li>
+            <li class="slider-link">
+                <img src="{% static 'PortalElAltoApp/image/2020/1.jpg' %}" alt="Slider 1">
+                <section class="caption">
+                    <h1>Aniv. 35 de la Ciudad de El Alto</h1>
+                    <p>Desfile cívico de la ciudad de El Alto, la ciudad mas joven en su 35 Aniversario</p>
+                </section>
+            </li>
+        </ul>
+        <ol class="pagination pag2">
+            <!--<li class="pagItem"><span class="fa fa-circle"></span></li>-->
+        </ol>
+        <div class="left">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+        <div class="right">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+    </div>
+
+</section>
+
+
+<!--============Categorias===============-->
+<section class="categorias-burb">
+    <div class="contenedor">
+        <h1>Categorias</h1>
+        <div class="categ_grid">
+            <a href="{% url 'UnidadEducativa' %}">
+                <article class="categ_columna">
+                    <img src="{% static 'PortalElAltoApp/image/unidad.jpg' %}" alt="">
+                    <h3>EDUCACIÓN</h3>
+                </article>
+            </a>
+            <a href="{% url 'Hospital' %}">
+                <article class="categ_columna">
+                    <img src="{% static 'PortalElAltoApp/image/salud.jpg' %}" alt="">
+                    <h3>SALUD</h3>
+                </article>
+            </a>
+            <a href="{% url 'Restaurant' %}" style="border-radius: 100%;">
+                <article class="categ_columna">
+                    <img src="{% static 'PortalElAltoApp/image/salchi.jpg' %}" alt="">
+                    <h3>RESTAURANT</h3>
+                </article>
+            </a>
+            <a href="{% url 'Hoteles' %}">
+                <article class="categ_columna">
+                    <img src="{% static 'PortalElAltoApp/image/hotel.jpg' %}" alt="">
+                    <h3>HOSPEDAJE</h3>
+                </article>
+            </a>
+        </div>
+    </div>
+</section>
+<br>
+<!--====================Eventos============================-->
+
+<!--=======================================================-->
+<div class="clearfix-padding"></div>
+<section class="ubi">
+    <div class="ubicacion_sec">
+        <h2>Ubicación</h2>
+        <div class="map-ubi">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244774.08830249522!2d-68.3542837789154!3d-16.54652515909692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edebe842e2473%3A0x3a1f8a2f17f89d8f!2sEl%20Alto!5e0!3m2!1ses!2sbo!4v1574644511867!5m2!1ses!2sbo"
+                width="470px" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</section>
+<div class="clearfix-padding"></div>
+<section class="sec-par">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <a href="http://www.multicine.com.bo/Cartelera.aspx?complejo=140#" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/multicine.png' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://www.tripadvisor.com.pe/Restaurant_Review-g2053387-d9561816-Reviews-Restaurante_Madagascar-El_Alto_La_Paz_Department.html"
+                    target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/madagascar.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="http://milapaz.travel/atractivo_turistico/index/nevado_huayna_potosi/91" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/huaynapotosi.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://www.facebook.com/pages/Polideportivo-HEROES-DE-OCTUBRE-El-Alto/556455731083287"
+                    target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/polideportivo.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://es.wikipedia.org/wiki/Estadio_Municipal_de_El_Alto" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/estadium.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://vymaps.com/BO/Plaza-de-la-Cruz-89481/" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/plazacruz.jpg' %}" alt="">
+                </a></div>
+            <div class="swiper-slide"><a href="http://www.elalteno.com.bo/ciudad/20191016/mirador-de-la-virgen-blanca"
+                    target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/virgenblanca.jpg' %}" alt="">
+                </a></div>
+            <div class="swiper-slide"><a href="http://www.cinebol.com.bo/" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/cinebol.jpg' %}" alt="">
+                </a></div>
+            <div class="swiper-slide"><a
+                    href="https://www.canarias7.es/hemeroteca/wiphala_un_barrio_lleno_de_color-FDCSF17460"
+                    target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/whipala1.jpg' %}" alt="">
+                </a></div>
+            <div class="swiper-slide"><a href="https://www.facebook.com/pg/comidacaseratugustito/posts/"
+                    target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/salchisalvaje.jpg' %}" alt="">
+                </a></div>
+            <div class="swiper-slide"><a href="https://unifranz.edu.bo/sedes/el-alto/" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/unifranz.jpeg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="http://www.upea.bo/" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/upea.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="https://utb.edu.bo/" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/utbelalto.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide"><a
+                    href="http://www.10minutos.com.bo/el-alto/visitantes-quedaron-maravillados-con-el-valle-ecoturistico-de-kaque-marka/"
+                    target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/valle.png' %}" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide"><a href="http://amibolivia.com/AMI/?p=40999" target="_blank">
+                    <img src="{% static 'PortalElAltoApp/image/vista.jpg' %}" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<div class="clearfix-padding"></div>
+<!--==============================ICONOS RED SOCIAL=======================================-->
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "PortalElAltoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<section class="banner">
+    <img src="{% static 'PortalElAltoApp/image/2020/img1.jpg' %}" alt="" class="banner_img">
+    <div class="banner_contenido" style="margin-top: 350;">Turismo El Alto
+        <h2 class="desc"> La ciudad más joven, ciudad del pueblo</h2>
+    </div>
+</section>
+<div class="container_cards">
+    <a href="{% url 'Turismo' %}">
+        <div class="card">
+            <h4 class="card_header t1">
+                EL ALTO
+            </h4>
+            <div class="card_cover c1">
+                <img src="{% static 'PortalElAltoApp/image/2020/img1.jpg' %}" alt="">
+            </div>
+            <div class="especificaciones co1">
+                <h2>Historia y características</h2>
+                <p>En esta sección podra encontrar las características más sobresalientes de la Ciudad de El Alto y las áreas verdes más hermosas que existen dentro la ciudad. </p>
+                <a href="/paisajes" class="btn-link" style="text-decoration: none;">
+                    <button class="button boton_p">Ver más</button>
+                </a>
+            </div>
+        </div>
+    </a>
+
+   <a href="{% url 'Manifestacione' %}">
+    <div class="card">
+        <h4 class="card_header t2">
+            Manifestaciones
+        </h4>
+        <div class="card_cover c2">
+            <img src="{% static 'PortalElAltoApp/image/2020/img1.jpg' %}" alt="">
+        </div>
+        <div class="especificaciones co2">
+            <h2>Culturales</h2>
+            <p>En esta seccion encontrará Museos, arquitectura y espacios urbanos, lugares historicos, restos y lugares arqueológicos y pueblos. </p>
+            <a href="/manifestaciones" class="btn-link" style="text-decoration: none;">
+                <button class="button boton_pa">Ver más</button>
+            </a>
+        </div>
+    </div>
+   </a>
+    <a href="{% url 'Festival' %}">
+        <div class="card">
+            <h4 class="card_header t3">
+                Festivales
+            </h4>
+            <div class="card_cover c3">
+                <img src="{% static 'PortalElAltoApp/image/2020/img1.jpg' %}" alt="">
+            </div>
+            <div class="especificaciones co3">
+                <h2>Especificaciones</h2>
+                <p>Aquí encontraras festivales folklóricos, religiosos, ferias, mercados, musica danzas, artes, artesanias, gastronomia.</p>
+                <a href="{% url 'Festival' %}" class="btn-link" style="text-decoration: none;">
+                    <button class="button boton_pai">Ver más</button>
+                </a>
+            </div>
+        </div>
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends "PortalElAltoApp/base2.html" %}
+
+{% load static %}
+
+{% block content %}
+<section id="banner" class="major">
+  <div class="inner">
+      <header class="major">
+          <h1>Bienvenido</h1>
+      </header>
+      <div class="content">
+          <p>En esta sección encontrará los servicios<br />
+              que brinda la ciudad de El Alto</p>
+          <ul class="actions">
+              <li><a href="#one" class="button next scrolly">Ver servicios</a></li>
+          </ul>
+      </div>
+  </div>
+</section>
+<!-- Main -->
+<div id="main">
+  
+  <!-- One -->
+    <section id="one" class="tiles">
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic01.jpg' %}" alt="">
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'UnidadEducativa' %}" class="link">EDUCACIÓN</a></h3>
+          <p style="text-align: justify;">En esta sección encontrará las unidades educativas existentes en la ciudad de El Alto</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic02.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'Hospital' %}" class="link">SALUD</a></h3>
+          <p  style="text-align: justify;">La ciudad de El Alto cuenta con distintos hospitales, centros de salud a disposición de la población.</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic03.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'Restaurant' %}" class="link">RESTAURANTES</a></h3>
+          <p style="text-align: justify;">La ciudad de El Alto cuenta con Restaurantes, patios de comida, pensiones y kioskos donde el ciudadano pueda degustar ciertos platillos deliciosos.</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic04.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'Hoteles' %}" class="link">HOSPEDAJE</a></h3>
+          <p style="text-align: justify;">En esta sección encontrará los diferentes tipos de hospedajes que cuenta la ciudad de El Alto para los visitantes que vienen de afueras de la ciudad.</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic05.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="landing.html" class="link">TRANSPORTE</a></h3>
+          <p style="text-align: justify;">En la ciudad de El Alto existe una variedad de formas para transportarse, ya sea por aire (Teleférico) o tierra (Buses, minibuses, trufis y otros.)</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic06.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'Empresa' %}" class="link">EMPRESAS</a></h3>
+          <p style="text-align: justify;">La ciudad de El Alto cuenta con una variedad de empresas (PYMES), teniendo en cuenta que la mayor parte de la población se mantiene gracias al comercio.</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic06.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'Noticia' %}" class="link">NOTICIAS</a></h3>
+          <p style="text-align: justify;">La ciudad de El Alto cuenta con medios de comunicación ya sea via Web, vía televisivo, via periodistica y radial.</p>
+        </header>
+      </article>
+      <article>
+        <span class="image">
+          <img src="{% static 'PortalElAltoApp/image/pic06.jpg' %}" alt="" />
+        </span>
+        <header class="major">
+          <h3><a href="{% url 'Comunicado' %}" class="link">COMUNICADOS</a></h3>
+          <p style="text-align: justify;">La ciudad de El Alto cuenta con una variedad de empresas (PYMES), teniendo en cuenta que la mayor parte de la población se mantiene gracias al comercio.</p>
+        </header>
+      </article>
+    </section>
+
+  <!-- Two -->
+    <section id="two">
+      <div class="inner">
+        <header class="major">
+          <h2>Servicios que brinda la Ciudad de El Alto</h2>
+        </header>
+        <p style="text-align: justify;">La ciudad de El Alto es la ciudad más joven de Bolivia y con una poblacion de casi un millón de habitantes. Es una ciudad muy visitada por personas de afueras de la ciudad quienes son atraidas por la Gran Feria de la 16 de Julio; Así mismo a la ciudad llegan desde las provincias a ofrecer sus productos o establecerse dentro del municipio.</p>
+        <p style="text-align: justify;">Los servicios que ofrece la ciudad de El Alto es gracias a su mayor población; así como la Educación, Salud, transportes y otros son necesarios para el sustento de nuestra ciudad.</p>
+        <ul class="actions">kljhuuuuuuu
+          <li><a href="#one" class="button next">Ver Servicios</a></li>
+        </ul>
+      </div>
+    </section>
+
+</div> 
+{% endblock %}

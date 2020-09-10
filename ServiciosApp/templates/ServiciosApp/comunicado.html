@@ -1,0 +1,24 @@
+{% extends 'PortalElAltoApp/basecomunicado.html' %}
+{% load static %}
+
+{% block content %}
+{% for  com in ServiciosApp %}
+<article class="item thumb span-1">
+    <h2>{{com.nombre}}</h2>
+    <a href="{{com.imagen.url}}" class="image" target="_blank">
+        <img src="{{com.imagen.url}}" alt=""></a>
+</article>
+{% endfor %}
+
+{% endblock %}
+
+{% block segundo %}
+{% for com in ServiciosApp %}
+<article class="item thumb span-2">
+    <h2>{{com.nombre}}</h2>
+    <a href="{{com.imagen.url}}" class="image" target="_blank">
+        <img src="{{com.imagen.url}}" alt="">
+    </a>
+</article>
+{% endfor %}
+{% endblock segundo %}

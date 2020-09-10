@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    {% load static %}
+    <title>Noticias-El Alto</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'PortalElAltoApp/css/main5copy.css' %}" />
+    <noscript>
+        <link rel="stylesheet" href="{% static 'PortalElAltoApp/css/noscript.css' %}" /></noscript>
+</head>
+
+<body class="is-preload">
+    <section id="sidebar" style="background-color: rgb(230, 97, 3); opacity: .9;">
+        <div class="inner">
+            <nav>
+                <ul>
+                    {% block content %}
+                    {% endblock %}
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner" style="background-color: rgb(194, 94, 28);">
+                <h1>Noticias</h1>
+                <p>En el sector de noticias encontrara los diferentes medios de comunicación sobre acontecimientos en la
+                    ciudad de El Alto<br>
+                    asi como en el mundo</p>
+                <ul class="actions">
+                    <li><a href="{% url 'Servicios' %}" class="button scrolly">Ver Servicios</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- One -->
+
+        <section id="one" class="wrapper style2 spotlights">
+            <section>
+                    <a href="{% static 'PortalElAltoApp/image/mundo.jpg' %}" class="image">
+                        <img src="{% static 'PortalElAltoApp/image/mundo.jpg' %}" alt="" data-position="center center">
+                    </a>
+                    <div class="content"  style="height: 600px;">
+                        
+                        <iframe src="https://www.covidvisualizer.com/" frameborder="0" height="100%" width="100%"></iframe>
+                    
+                </div>
+                </section>
+        </section>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Politicas de Seguridad</li>
+                <li>Dirección: <a href="/">Culturas</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{% static 'PortalElAltoApp/js/jquery.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/jquery.scrolly.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/browser.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/util.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/main5.js' %}"></script>
+
+</body>
+
+</html>

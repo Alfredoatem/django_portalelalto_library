@@ -1,0 +1,14 @@
+.header-body{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-body h1{
+    text-align: center;
+}
+.card{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.card-body p{
+    text-align: justify;
+}

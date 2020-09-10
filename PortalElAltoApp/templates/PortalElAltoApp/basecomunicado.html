@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        {% load static %}
+		<title>Comunicados</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'PortalElAltoApp/css/main7.css' %}">
+		<noscript><link rel="stylesheet" href="{% static 'PortalElAltoApp/css/noscript7.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Items -->
+							<div class="items">
+
+								<div class="item intro span-2">
+									<h1>Comunicados</h1>
+									<p>En esta sección se encuentra los comunicados del<br />
+									<a href="/">GAMEA</a></p>
+								</div>
+
+                                {% block content %}
+                                {% endblock %}
+
+							</div>
+
+						<!-- Items -->
+							<div class="items">
+
+                                {% block segundo %}
+                                {% endblock segundo %}
+
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<section>
+                            <p>En esta seccion de<strong>Comunicados</strong>, encontrará los comunicados oficales del <a href="/">GAMEA</a>. Mismos comunicados
+                                estan dirigidos al público en general y a la población alteña.<a href="/">Servicios el Alto</a>. GAMEA</p>
+						</section>
+						<section>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; GAMEA</li><li>Dirección: <a href="/">Culturas</a></li>
+							</ul>
+						</section>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'PortalElAltoApp/js/jquery.min.js' %}"></script>
+			<!--<script src="{% static 'PortalElAltoApp/js/jquery.poptrox.min.js' %}"></script>-->
+			<script src="{% static 'PortalElAltoApp/js/browser.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/util7.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/main7.js' %}"></script>
+	</body>
+</html>

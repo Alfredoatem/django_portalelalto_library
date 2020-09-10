@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+}
+*::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../image/cielo.jpg);
+    background-size: 100% 100%;
+}
+.contenedor-logo{
+    display: block;
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+}
+.logo img{
+    display: block;
+    margin: auto ;
+    width: 700px;
+    padding-top: 10px;
+}
+
+nav{
+    width: 1200px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+}
+nav > ul > li {
+    float: left;
+}
+nav ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.nav-noticias ul li a{
+    display: inline-block;
+    width: 300px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+}
+nav ul li a:hover{
+    background: #c21500;
+    background: -webkit-linear-gradient(to left, #116611, #c21500);
+    background: linear-gradient(to left, #116611, #c21500);
+}
+/*Contenido de la noticia*/
+div.contenido-noticia{
+    width: 1200px;
+    margin: 0 auto;
+}
+.contenido-noticia::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-noticia{
+    width: 70%;
+    float: left;
+    padding-right: 30px;
+}
+article{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.titulo-noticia{
+    color: rgb(121, 0, 0);
+    text-align: center;
+}
+article h2{
+    color: red;
+    margin-bottom: 10px;
+}
+article img{
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+article p{
+    line-height: 2;
+    text-align: justify;
+}
+.boton{
+    background-color: rgb(0, 189, 0);
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+aside{
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li{
+    padding: 10px 0px 10px 10px;
+}
+aside ul li:hover{
+    background-color: green;
+}
+aside ul li a{
+    color: rgb(47, 0, 255);
+    
+}
+aside ul li a:hover{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+{% extends "PortalElAltoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% for proy in ProyectoApp%}
+
+
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{proy.imagen.url}}"
+                alt="" style="width: 70%;">
+            <div class="intro-text divder text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4 h2">
+                    <span class="section-heading-upper">{{proy.titulo}}</span>
+                    <span class="section-heading-lower">{{proy.contenido}}</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<div>
+    <p>
+    <h2>{{proy.titulo}}</h2>
+
+    <p>{{proy.contenido}}</p>
+
+    <p><img src="{{proy.imagen.url}}"></p>
+
+    </p>
+</div>-->
+
+{% endfor%}
+
+{% endblock %}

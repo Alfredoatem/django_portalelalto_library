@@ -1,0 +1,71 @@
+body {
+  font-family: 'Lora';
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.h2{
+  font-family: 'Raleway';
+}
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom:.5rem;
+
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.intro {
+  position: relative;
+  
+}
+.divder{
+  margin-left: 600px;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: left;
+  }
+  .intro .intro-text {
+    float: right;
+    width: 60%;
+    margin-top: 3rem;
+    background-color: rgb(75, 30, 9);
+    color: rgb(255, 102, 0);
+    position: absolute;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+
+

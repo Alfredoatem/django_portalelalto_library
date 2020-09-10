@@ -1,0 +1,17 @@
+{% extends 'PortalElAltoApp/baseareaverde.html' %}
+{%load static %}
+{% block presentacion %}
+<h1>Áreas Verdes</h1>
+<p>Áreas verdes y paisajes de la ciudad de <a href="/">El Alto</a></p>
+{% endblock presentacion %}
+
+{% block content %}
+
+{% for area in ContenidoApp %}
+<article>
+    <a class="thumbnail" href="{{area.imagen.url}}" style="width: 100%; height: 100%;"><img src="{{area.imagen.url}}" alt="" style="width: 100%; height: 100%;"></a>
+    <h2>{{area.nombre}}</h2>
+    <p>{{area.lugar}}</p>
+</article>
+{% endfor %}
+{% endblock %}

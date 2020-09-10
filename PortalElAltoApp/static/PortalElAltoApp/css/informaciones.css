@@ -1,0 +1,114 @@
+html{
+    box-sizing: border-box;
+}
+*::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../image/2020/vuelo.jpg);
+    background-size: 100% 100%;
+}
+.logo_header{
+    width: 800px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+nav {
+    width: 1200px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+}
+nav ul{
+     list-style: none;
+}
+nav > ul > li {
+    float: left;
+}
+nav ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.nav_info ul li a {
+    display: inline-block;
+    width: 300px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.nav_info ul li a:hover {
+    background: #c21500;
+    background: -webkit-linear-gradient(to left, #116611, #c21500);
+    background: linear-gradient(to left, #116611, #c21500);
+}
+div.main_info{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_info::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+main{
+    width: 70%;
+    float: left;
+    padding-right: 30px;
+}
+.main_info main h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.main_info main p{
+    text-align: justify;
+}
+main::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main_info main img{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+aside{
+    width: 30%;
+    float: right;
+    background-color: coral;
+}
+aside::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+aside ul{
+    list-style: none;
+}
+aside h2{
+    text-align: center;
+}
+
+aside > ul > li{
+    text-decoration: none;
+    padding-left: 20px;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+}

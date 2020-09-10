@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        {% load static %}
+		<title>Empresas-El Alto</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="icon" href="{% static 'PortalElAltoApp/image/logo_elalto.ico' %}">
+		<link rel="stylesheet" href="{% static 'PortalElAltoApp/css/main4.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'PortalElAltoApp/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Empresas</h1>
+							<p class="major">La ciudad de El Alto cuenta con varias empresas por su mayor población.<a href="/"> El Alto</a> es una ciudad con una variedad de <a href="{% url 'Empresa' %}">Empresas</a>.</p>
+							<ul class="actions stacked">
+								<li><a href="{% url 'Servicios' %}" class="button big wide smooth-scroll-middle">Ver Servicios</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="{% static 'PortalElAltoApp/image/empresa.jpg' %}" alt="">
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Importancia de las Empresas en El Alto</h2>
+							<p>En la ciudad existen alrededor de 5600 pequeñas y medianas empresas, fábricas y plantas de procesamiento de hidrocarburos. Es también el lugar de exportación de los recursos minerales del país y materia prima procesada</p>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+                                {% block content %}
+                                {% endblock %}
+                            
+							</div>
+					</section>
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'PortalElAltoApp/js/jquery.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/browser.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/util.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/main4.js' %}"></script>
+
+	</body>
+</html>

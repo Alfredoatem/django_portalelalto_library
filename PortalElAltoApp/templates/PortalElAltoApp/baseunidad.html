@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        {% load static %}
+        <title>Full Motion</title>
+        <link rel="icon" href="{% static 'PortalElAltoApp/image/logo_elalto.ico' %}">
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{% static 'PortalElAltoApp/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'PortalElAltoApp/css/main3.css' %}" />
+        
+	</head>
+	<body id="top">
+        <section id="banner" data-video="images/banner">
+            <div class="inner">
+                <header>
+                    <h1>Educación</h1>
+                    <p>La ciudad de <a href="/">El Alto </a>cuenta con alrededor de 400 unidades educativas<br />
+                        Los <a href="{% url 'Servicios' %}">servicios</a> que brinda cada Unidad Educativa de El Alto es educar a niños y jovenes para hacerlos personas de bien.</p>
+                </header>
+                <a href="#main" class="more">Learn More</a>
+            </div>
+        </section>
+        {% block content %}
+        {% endblock %}
+		
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Gobierno Autónomo Municipal de El Alto</h2>
+						<p>El Gobierno Autónomo Municipal de El Alto se encarga del desayuno escolar de las unidades educativas fiscales del municipio de el Alto y asi evitar que los estudiante asistan a clases sin desayunar.</p>
+
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; GAMEA. Dirección: CULTURAS. Images: <a href="#main">Lista</a>. Unidades: <a href="{% url 'Servicios' %}">Atrás</a>.</p>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'PortalElAltoApp/js/jquery.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/jquery.poptrox.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/skel.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/util.js' %}"></script>
+            <script src="{% static 'PortalElAltoApp/js/main3.js' %}"></script>
+            <script src="{% static 'PortalElAltoApp/js/bootstrap.min.js' %}"></script>
+
+	</body>
+</html>

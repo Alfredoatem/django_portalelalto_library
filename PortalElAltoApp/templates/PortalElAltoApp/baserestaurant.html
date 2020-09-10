@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        {% load static %}
+		<title>Restaurantes-El Alto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'PortalElAltoApp/css/main5.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'PortalElAltoApp/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#" active>Restaurantes</a></li>
+							<li><a href="{% url 'Hoteles' %}">Hospedaje</a></li>
+							<li><a href="{% url 'Hospital' %}">Hospital</a></li>
+							<li><a href="{% url 'Transporte' %}">Transporte</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner" style="background-color: rgb(194, 94, 28);">
+							<h1>Restaurantes</h1>
+							<p>En la ciudad de El Alto existe una variedad de sitios para desayunar, almorzar, cenar o comer algun plato extra a cualquier hora.<br>
+							Existe Restaurantes, pensiones o kioskos donde se puede degustar la variedad de platillos existentes.</p>
+							<ul class="actions">
+								<li><a href="{% url 'Servicios' %}" class="button scrolly">Ver Servicios</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+                {% block content %}
+                {% endblock %}
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Politicas de Seguridad</li><li>Dirección: <a href="http://html5up.net">Culturas</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'PortalElAltoApp/js/jquery.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/browser.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/util.js' %}"></script>
+			<script src="{% static 'PortalElAltoApp/js/main5.js' %}"></script>
+
+	</body>
+</html>

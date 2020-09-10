@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Alto</title>
+    <link rel="icon" href="{% static 'PortalElAltoApp/image/logo_elalto.ico' %}">
+    <link rel="stylesheet" href="{% static 'PortalElAltoApp/css/main.css' %}">
+    <noscript>
+        <link rel="stylesheet" href="{% static 'PortalElAltoApp/css/noscript.css' %}">
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="/" class="logo"  style="color: white;">
+                <strong><img src="{% static 'PortalElAltoApp/image/logo_elalto.jpg' %}" alt="" style="width: 35px;height: 35px;margin-top: 5px;"></strong>
+                <span>GAMEA</span>
+            </a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="{% url 'UnidadEducativa' %}">Educación</a></li>
+                <li><a href="{% url 'Hospital' %}">Salud</a></li>
+                <li><a href="{% url 'Hoteles' %}">Hospedaje</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Ver Servicios</a></li>
+                <li><a href="{% url 'admin:index' %}" class="button fit">Log In</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+
+        {% block content %}
+        {% endblock %}
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; GAMEA</li>
+                    <li>Dirección: <a href="https://html5up.net">Culturas</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'PortalElAltoApp/js/jquery.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/jquery.scrolly.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/browser.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/util.js' %}"></script>
+    <script src="{% static 'PortalElAltoApp/js/main2.js' %}"></script>
+
+</body>
+
+</html>

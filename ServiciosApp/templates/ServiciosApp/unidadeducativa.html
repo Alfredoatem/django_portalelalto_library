@@ -1,0 +1,38 @@
+{% extends "PortalElAltoApp/baseunidad.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--==================================-->
+
+
+<div id="main">
+    <div class="inner">
+
+        <!-- Boxes -->
+        <div class="thumbnails">
+            {% for unid in ServiciosApp %}
+            <div class="box">
+                <a href="{{unid.imagen.url}}" class="image fit">
+                    <img src="{{unid.imagen.url}}" alt="" style="height: 230px;">
+                </a>
+                <div class="inner">
+                    <h3>{{unid.nombre}}</h3>
+                    <p>{{unid.contenido}}</p>
+                    <p>{{unid.descripcion}}</p>
+                    <p>Dirección: {{unid.direccion}}</p>
+                    <p>Teléfono: {{unid.telefono}}</p>
+                    <a href="{{unid.web}}" target="_blank" style="text-decoration: none;"class="btn btn-primary" >Ver más</a>
+                    
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<!--=====================================-->
+
+
+{% endblock %}

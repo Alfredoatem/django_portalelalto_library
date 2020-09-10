@@ -1,0 +1,554 @@
+ * {
+   box-sizing: border-box;
+ }
+
+ nav {
+   background-image: url('../image/cultura/img17.jpg');
+   background-size: 100% 100%;
+ }
+
+ .cont-principal {
+  width: 1200px;
+  margin: 0 auto;
+}
+.cont-principal p{
+  text-align: justify;
+}
+
+ .header-body {
+   margin: 0 auto;
+ }
+
+ .header-body h1 {
+   text-align: center;
+   margin: 0 auto;
+   padding-bottom: 10px;
+ }
+
+ div.gallery {
+   border: 1px solid #ccc;
+ }
+
+ div.gallery:hover {
+   border: 1px solid #777;
+ }
+
+ div.gallery img {
+   width: 100%;
+   height: 400;
+ }
+
+ div.desc {
+   padding: 15px;
+   text-align: center;
+ }
+
+ .responsive {
+   padding: 0 6px;
+   float: left;
+   width: 24.99999%;
+   height: auto;
+ }
+
+
+ .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ /*--------------------POPUP_-------------------------------*/
+
+ .popupd {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+
+ /* The actual popup */
+
+ .popupd .popuptextd {
+   visibility: hidden;
+   width: 300px;
+   background-color: rgb(12, 12, 12);
+   color: #fff;
+   text-align: justify;
+   border-radius: 6px;
+   padding: 8px 0;
+   position: absolute;
+   z-index: 1;
+   bottom: 125%;
+   left: 50%;
+   margin-left: -80px;
+   padding: 5px;
+ }
+
+ /* Popup arrow */
+
+ .popupd .popuptextd::after {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: #555 transparent transparent transparent;
+ }
+
+ /* Toggle this class - hide and show the popup */
+
+ .popupd .show {
+   visibility: visible;
+   -webkit-animation: fadeIn 1s;
+   animation: fadeIn 1s;
+ }
+ /*-------------------------------------------------------*/
+ .popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup1 .popuptext1 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup1 .popuptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/*---------------------------------------------------------*/
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup2 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+ /* Add animation (fade in the popup) */
+/*-------------------------------------------------------------*/
+.popup3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup3 .popuptext3 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup3 .popuptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup3 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+ /* Add animation (fade in the popup) */
+/*-------------------------------------------------------------*/
+.popup4 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup4 .popuptext4 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup4 .popuptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup4 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+ /* Add animation (fade in the popup) */
+/*-------------------------------------------------------------*/
+.popup5 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup5 .popuptext5 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup5 .popuptext5::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup5 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+ /* Add animation (fade in the popup) */
+/*-------------------------------------------------------------*/
+.popup6 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup6 .popuptext6 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup6 .popuptext6::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup6 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+ /* Add animation (fade in the popup) */
+/*-------------------------------------------------------------*/
+.popup7 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup7 .popuptext7 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup7 .popuptext7::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup7 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/*---------------------------------------------*/
+.popup8 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+
+.popup8 .popuptext8 {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  padding: 5px;
+}
+
+/* Popup arrow */
+
+.popup8 .popuptext8::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup8 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/*-------------------------------------------------------------*/
+ @-webkit-keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+
+
+ /*----------------------RESPONSIVE--------------------*/
+ 
+ @media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .cont-principal{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1200px){
+  .cont-principal{
+    width: 1000px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  .cont-principal{
+    width: 450px;
+  }
+
+}

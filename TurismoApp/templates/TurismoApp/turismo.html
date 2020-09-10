@@ -1,0 +1,103 @@
+{% extends "PortalElAltoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="body_general_team" style="background-color: rgb(255, 115, 0);">
+    <div class="header-body" style="width: 100%; padding-top: 10px;">
+        <a href="/turismop" style="margin-left: 30px;">
+            <button type="button" class="btn btn-dark"><i class="fa fa-angle-left"></i> Atrás</button></a>
+        <h1 class="title">Historia y Características de la Ciudad de El Alto</h1>
+    </div><br>
+    <div class="group_body_g" style="margin: 0 auto; width: 80%; text-align: center; padding-bottom: 5px;">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-warning btn_g"><a href="{% url 'Cultura' %}"
+                    style="text-decoration: none; color: black;">Cultura</a></button>
+            <button type="button" class="btn btn-warning btn_s"><a href="{% url 'Historia' %}"
+                style="text-decoration: none; color: black;">Informaciones</a></button>
+            <button type="button" class="btn btn-warning btn_s"><a href="{% url 'AreasVerdes' %}"
+                style="text-decoration: none; color: black;">Areas Verdes</a></button>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-warning dropdown-toggle btn_g"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Todos
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="{% url 'Cultura' %}">Cultura</a>
+                    <a class="dropdown-item" href="{% url 'Historia' %}">Informaciones</a>
+                    <a class="dropdown-item" href="#">Areas Verdes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% for turis in TurismoApp %}
+
+<div class="contenedor_der">
+    <div class="img_der_1">
+        <h2>{{turis.titulo}}</h2>
+        <p>{{turis.contenido}}</p>
+
+       <!-- <div class="popup c" onclick="myFunction1()">
+            <button type="button" class="btn btn-primary"><i class="fa fa-play"></i> Audio
+                Castellano<span class="popuptext" id="myPopup"><audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="{{turis.audio1.url}}" type="audio/mpeg">
+                    </audio></span>
+            </button>
+        </div>-->
+
+       <!-- <div class="popup2 c" onclick="myFunction2()">
+            <button type="button" class="btn btn-danger"><i class="fa fa-play"></i> Audio Aymara
+                <span class="popuptext" id="myPopup2">
+                    <audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="{{turis.audio1.url}}" type="audio/mpeg">
+                    </audio>
+                </span>
+            </button>
+        </div>
+        <a href="#"><button type="button" class="btn btn-secondary"><i class="fa fa-eye"></i>Traducir</button></a>-->
+    </div>
+
+    <div class="img_der_2">
+        <a target="_blank" href="{{turis.imagen1.url}}">
+            <img src="{{turis.imagen1.url}}" alt="">
+        </a>
+    </div>
+    <div class="img_der_3">
+        <a target="_blank" href="{{turis.imagen2.url}}">
+            <img src="{{turis.imagen2.url}}" alt="">
+        </a>
+    </div>
+</div>
+
+<script>
+    function myFunction1() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    function myFunction2() {
+        var popup2 = document.getElementById("myPopup2");
+        popup2.classList.toggle("show");
+    }
+</script>
+<!--
+<div><p>
+
+    <h2>{{turis.titulo}}</h2>
+
+    <p>{{turis.contenido}}</p>
+
+    <p><img src="{{turis.imagen1.url}}"></p>
+    <p><img src="{{turis.imagen2.url}}"></p>
+    <p><audio src="{{turis.audio1.url}}" controls loop></audio></p>
+    <p>{{turis.traducido}}</p>
+
+</p></div>
+-->
+{% endfor %}
+
+{% endblock %}

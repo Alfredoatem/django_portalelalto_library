@@ -1,0 +1,27 @@
+{% extends "PortalElAltoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="body_general_team" style="background-color: rgb(255, 115, 0);">
+    <div class="header-body" style="width: 100%; padding-top: 10px;">
+        <a href="/turismo" style="margin-left: 30px;">
+            <button type="button" class="btn btn-dark"><i class="fa fa-angle-left"></i> Atrás</button></a>
+        <h1 class="title">Historia</h1>
+    </div><br>
+</div>
+{% for hist in ContenidoApp %}
+<div class="main_info">
+    <main>
+        <h2>{{hist.titulo}}</h2>
+        <p>{{hist.contenido}}</p>
+        <h2>{{hist.nombre1}}</h2>
+
+        <a href="{{hist.imagen1.url}}"><img src="{{hist.imagen1.url}}" alt=""></a>
+        <a href="{{hist.imagen2.url}}"><img src="{{hist.imagen2.url}}" alt=""></a>
+        <h2>{{hist.nombre2}}</h2>
+        <a href="{{hist.imagen3.url}}"><img src="{{hist.imagen3.url}}" alt=""></a>
+        <a href="{{hist.imagen4.url}}"><img src="{{hist.imagen4.url}}" alt=""></a>
+</div>
+{% endfor %}
+{% endblock %}
